@@ -60,9 +60,42 @@ header {
     text-align: center;
 }
 .rectangle {
+    position: absolute;
+    left: 250px;
     width: 50px;
-    height: 150px;
+    height: 200px;
     border: 2px solid green;
+}
+.balle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: green;
+    animation-name: rebond;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes rebond {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top:150px;
+    }
+    40% {
+        top: 50px;
+    }
+    60% {
+        top: 150px;
+    }
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
 }
 .loader {
     position: absolute;
@@ -74,6 +107,30 @@ header {
     border-radius: 5%;
     background-color: grey;
     text-align: center;
+}
+.boule1 {
+    margin: 20px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.boule2 {
+    margin: 20px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.boule3 {
+    float: left;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
 }
 .course {
     position: absolute;
