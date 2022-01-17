@@ -107,30 +107,58 @@ header {
     border-radius: 5%;
     background-color: grey;
     text-align: center;
+
+}
+.boules {
+    margin: auto;
+    height: 100px;
+    width: 306px;
 }
 .boule1 {
-    margin: 20px;
-    float: left;
-    width: 100px;
     height: 100px;
+    width: 100px;
     border-radius: 100%;
     border: 1px solid black;
+    float: left;
+    animation-name: changementcouleur;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 .boule2 {
-    margin: 20px;
-    float: left;
-    width: 100px;
     height: 100px;
+    width: 100px;
     border-radius: 100%;
     border: 1px solid black;
+    float: left;
+    animation-name: changementcouleur;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
 }
 .boule3 {
-    float: left;
-    margin: 20px;
-    width: 100px;
     height: 100px;
+    width: 100px;
     border-radius: 100%;
     border: 1px solid black;
+    float: left;
+    animation-name: changementcouleur;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+@keyframes changementcouleur {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: grey;
+    }
+    100% {
+        background-color: black;
+    }
 }
 .course {
     position: absolute;
