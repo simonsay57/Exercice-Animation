@@ -171,6 +171,78 @@ header {
     background-color: grey;
     text-align: center;
 }
+.boiteacarre {
+    position: relative;
+
+    height: 230px;
+}
+.carreq {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    animation-name: rotation, moving, changeColor;
+    animation-iteration-count:infinite;
+    animation-duration:2s, 10s;
+    animation-timing-function: linear;
+}
+#carre2 {
+    animation-name: rotation, moving, changeColor;
+    animation-iteration-count:infinite;
+    animation-duration: 2s, 10s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#carre3 {
+    animation-name: rotation, moving, changeColor;
+    animation-iteration-count:infinite;
+    animation-duration: 2s, 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+#carre4 {
+    animation-name: rotation, moving, changeColor;
+    animation-iteration-count:infinite;
+    animation-duration: 2s, 10s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+}
+#carre5 {
+    animation-name: rotation, moving, changeColor;
+    animation-iteration-count:infinite;
+    animation-duration: 2s, 10s;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+}
+#carre6 {
+    animation-name: rotation, moving, changeColor;
+    animation-iteration-count:infinite;
+    animation-duration: 2s, 10s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+}
+@keyframes moving {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 578px;
+    }
+    50% {
+        top: 198px;
+        left: 578px;
+    }
+    75% {
+        top: 198px;
+        left: 0px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
 .menutransform {
     position: absolute;
     top: 80px;
